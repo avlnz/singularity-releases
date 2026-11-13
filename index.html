@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Singularity: download</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --bg: #09090b; --panel: #18181b; --line: #27272a; --text: #fafafa; --dim: #a1a1aa; --accent: #059669; --accent-hi: #10b981; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(1200px 700px at 30% 20%, #0b2a20 0%, var(--bg) 60%) fixed, var(--bg); color: var(--text);
+  font: 17px/1.55 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+.tag { color: var(--accent-hi); letter-spacing: 0.28em; font-size: 13px; text-transform: uppercase; }
+h1 { font-size: clamp(40px, 9vw, 72px); letter-spacing: 0.12em; margin: 10px 0 8px; font-weight: 800; }
+p.lead { color: var(--dim); margin: 0 0 32px; max-width: 34em; }
+.buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 12px; }
+a.dl { display: block; text-decoration: none; color: var(--text); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 10px; padding: 18px 20px; }
+a.dl strong { display: block; font-size: 19px; letter-spacing: 0.04em; }
+a.dl span { color: var(--dim); font-size: 14px; }
+a.dl.mine { background: var(--accent); border-color: var(--accent-hi); }
+a.dl.mine span { color: #d1fae5; }
+a.dl:hover, a.dl:focus-visible { border-color: var(--accent-hi); outline: none; }
+.note { color: var(--dim); font-size: 14px; margin: 0 0 36px; }
+h2 { font-size: 14px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--dim); margin: 0 0 12px; }
+ol { margin: 0 0 36px; padding: 0; list-style: none; counter-reset: step; }
+ol li { counter-increment: step; position: relative; padding: 12px 0 12px 48px; border-top: 1px solid var(--line); }
+ol li::before { content: counter(step); position: absolute; left: 0; top: 12px; width: 30px; height: 30px; border-radius: 50%;
+  border: 1px solid var(--accent-hi); color: var(--accent-hi); text-align: center; line-height: 28px; font-size: 14px; }
+kbd { background: var(--panel); border: 1px solid var(--line); border-radius: 5px; padding: 1px 7px; font: inherit; font-size: 14px; }
+.keys { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; color: var(--dim); margin: 0; }
+.keys dt { color: var(--text); }
+.keys dd { margin: 0; }
+@media (max-width: 520px) { .buttons { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="tag">Early access // invite only</div>
+  <h1>SINGULARITY</h1>
+  <p class="lead">A sci-fi action RPG. One shared city, Port Halden, and the machine-built depths under it. You need an invite to play: sign in with the email address you were invited with.</p>
+
+  <div class="buttons">
+    <a class="dl" id="mac" href="https://github.com/avlnz/singularity-releases/releases/latest/download/Singularity-Launcher-macos.zip">
+      <strong>Download for Mac</strong><span>Launcher, about 60 MB</span></a>
+    <a class="dl" id="win" href="https://github.com/avlnz/singularity-releases/releases/latest/download/Singularity-Launcher-windows.zip">
+      <strong>Download for Windows</strong><span>Launcher, about 40 MB</span></a>
+  </div>
+  <p class="note">Wait for the download to finish before opening it. The launcher then downloads the game itself (about 500 MB the first time) and keeps it up to date.</p>
+
+  <h2>Getting in</h2>
+  <ol>
+    <li><strong>Unzip and open the launcher.</strong> On Mac, drag it into Applications first. On Windows, the first run may warn about an unknown publisher: choose <em>More info</em>, then <em>Run anyway</em>.</li>
+    <li><strong>Press Sign in with email.</strong> Your browser opens. Type the email address you were invited with.</li>
+    <li><strong>Click the link in the email you get.</strong> Then go back to the launcher. If it is still waiting, press <em>Open the browser again</em>.</li>
+    <li><strong>Press Play.</strong> You land in Port Halden with everyone else who is online.</li>
+  </ol>
+
+  <h2>Playing together</h2>
+  <dl class="keys">
+    <dt><kbd>F</kbd> near a player</dt><dd>Party up. They press <kbd>Y</kbd> to join you.</dd>
+    <dt><kbd>O</kbd></dt><dd>Who is online and where, with invite and join.</dd>
+    <dt><kbd>Enter</kbd></dt><dd>Chat. Hold <kbd>V</kbd> to speak instead of typing.</dd>
+    <dt><kbd>K</kbd></dt><dd>Skill tree.</dd>
+  </dl>
+</main>
+<script>
+  // Highlight the download for this computer.
+  var ua = navigator.userAgent || "";
+  var id = /Windows/i.test(ua) ? "win" : (/Macintosh|Mac OS X/i.test(ua) ? "mac" : "");
+  if (id) document.getElementById(id).classList.add("mine");
+</script>
+</body>
+</html>
