@@ -8,35 +8,23 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#030406">
 <link rel="preload" href="fonts/BarlowCondensed-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<canvas class="smoke" aria-hidden="true"></canvas>
-<svg class="orbits" viewBox="0 0 600 600" aria-hidden="true">
-  <defs><radialGradient id="glow"><stop offset="0" stop-color="#1fb880" stop-opacity="0.22"/><stop offset="1" stop-color="#1fb880" stop-opacity="0"/></radialGradient></defs>
-  <circle cx="300" cy="300" r="170" fill="url(#glow)"/>
-  <g transform="rotate(-27 300 300)">
-    <ellipse class="ring" cx="300" cy="300" rx="78" ry="34"/>
-    <ellipse class="ring" cx="300" cy="300" rx="128" ry="56"/>
-    <ellipse class="ring" cx="300" cy="300" rx="178" ry="78"/>
-    <ellipse class="ring" cx="300" cy="300" rx="228" ry="100"/>
-    <ellipse class="ring" cx="300" cy="300" rx="282" ry="124"/>
-    <ellipse class="arc c" pathLength="1000" cx="300" cy="300" rx="78" ry="34"/>
-    <ellipse class="arc" pathLength="1000" cx="300" cy="300" rx="128" ry="56"/>
-    <ellipse class="arc b" pathLength="1000" cx="300" cy="300" rx="178" ry="78"/>
-    <ellipse class="arc" pathLength="1000" cx="300" cy="300" rx="228" ry="100" style="animation-delay:-33s"/>
-    <ellipse class="arc d" pathLength="1000" cx="300" cy="300" rx="282" ry="124"/>
-  </g>
-  <circle class="core" cx="300" cy="300" r="21"/>
-</svg>
+<canvas class="eclipse" data-state="quiet" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 <header class="top">
   <a class="brand" href="./"><i></i>Singularity</a>
   <nav aria-label="Pages"><a class="quiet" href="./">Download</a><a class="quiet" href="play.html" aria-current="page">How to play</a></nav>
 </header>
 <main class="docs">
-  <div class="col wide">
-    <p class="status rise"><i></i>How to play</p>
-    <h1 class="small rise">Controls and playing together</h1>
+  <div class="copy">
+    <p class="eyebrow rise"><i></i>How to play</p>
+    <h1 class="rise">Controls and playing <em>together</em></h1>
     <p class="lead rise">The game teaches as you go: hints appear when you reach something new, and <kbd>H</kbd> shows the controls for whatever you are holding. This page is the same thing in one place.</p>
 
     <section class="doc rise" aria-labelledby="controls">
@@ -87,7 +75,7 @@
     </section>
 
     <section class="doc rise" aria-labelledby="pad">
-      <h2 id="pad">On a controller</h2>
+      <h2 id="pad">On a <em>controller</em></h2>
       <p>The whole game plays on a controller: plug one in and the on-screen prompts switch to its buttons, shown with Xbox-style names. Three things still want a keyboard or the pause menu:</p>
       <ul>
         <li><b>Skill tree and players list</b> are in the pause menu, under Skills and Players.</li>
@@ -97,7 +85,7 @@
     </section>
 
     <section class="doc rise" aria-labelledby="together">
-      <h2 id="together">Playing together</h2>
+      <h2 id="together">Playing <em>together</em></h2>
       <p>Everyone who is online is in the same Port Halden. You see each other in the streets and on the minimap, and chat reaches everyone.</p>
       <ul>
         <li><b>Party up in one press.</b> Walk up to a player and press <kbd>F</kbd>. They get a banner and press <kbd>Y</kbd> to join you, or <kbd>N</kbd> to pass.</li>
@@ -108,7 +96,7 @@
     </section>
 
     <section class="doc rise" aria-labelledby="loop">
-      <h2 id="loop">What you do</h2>
+      <h2 id="loop">What you <em>do</em></h2>
       <ul>
         <li><b>Port Halden</b> is the city: traders, other players, your ship, and the freight lift down. The minimap always points to the lift.</li>
         <li><b>Contracts</b> start at the lift's board: three floors down with a boss at the bottom. There are five tiers, and clearing one opens the next.</li>
@@ -120,13 +108,13 @@
     </section>
 
     <section class="doc rise" aria-labelledby="early">
-      <h2 id="early">Early access</h2>
+      <h2 id="early">Early <em>access</em></h2>
       <p>This is an early build, so things will break. Tell whoever invited you what you ran into: what you were doing, and what you saw.</p>
       <p class="more" style="margin-top:18px"><a class="quiet" href="./"><span aria-hidden="true">&larr;</span> Back to the download</a></p>
     </section>
   </div>
 </main>
 <footer></footer>
-<script src="smoke.js"></script>
+<script src="eclipse.js"></script>
 </body>
 </html>

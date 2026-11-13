@@ -1,26 +1,27 @@
-/* Singularity's public pages (download, how to play). The look follows the launcher and
-   Intangle's signed-out pages: the drifting smoke background, no cards or boxes, the controls
-   sitting straight on the background, and the design system's gunmetal primary with its green
-   sheen for the one thing a visitor is here to press. Type is Barlow, the game's own typeface. */
+/* Singularity's public pages (download, how to play). The look follows the Flow design
+   reference Hayds chose (13 Nov 2026): one large eclipse behind everything, a serif headline
+   with one coloured italic word, small mono facts, no cards. The download buttons are
+   Intangle's gunmetal primary with its green sheen. Body type is Barlow, the game's own. */
 
 @font-face { font-family: "Barlow"; src: url("fonts/Barlow-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fonts/Barlow-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Barlow Condensed"; src: url("fonts/BarlowCondensed-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
 
 :root {
-  --base: #030406;
-  --fg: #f2f4f3;
-  --body: #c9cdcb;
-  --muted: #979d9a;
-  --faint: #7b817e;
-  --hair: rgba(255, 255, 255, 0.07);
-  --live: oklch(0.84 0.045 162);
-  /* The gunmetal primary, as in Intangle (web/src/spa/globals.css, .dark). */
+  --base: #050608;
+  --fg: #f4f6f3;
+  --body: #cdd2ce;
+  --muted: #9aa19c;
+  --faint: #777e79;
+  --hair: rgba(255, 255, 255, 0.08);
+  --accent: oklch(0.84 0.15 162);
+  --serif: "Newsreader", "Iowan Old Style", "New York", Georgia, ui-serif, serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --gm-bg: linear-gradient(180deg, #2b302f, #191d1c);
   --gm-edge: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.06), 0 1px 3px rgba(0, 0, 0, 0.45);
   --gm-fg: oklch(0.84 0.045 162);
   --gm-sheen: rgba(110, 220, 165, 0.15);
-  --gutter: clamp(20px, 11vw, 168px);
+  --gutter: clamp(22px, 5vw, 72px);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -34,25 +35,24 @@ body {
 a { color: inherit; }
 ::selection { background: rgba(110, 220, 165, 0.28); color: var(--fg); }
 
-/* Background: the smoke canvas, then the launcher's orbits far to the right. */
-.smoke { position: fixed; inset: 0; z-index: -2; width: 100%; height: 100%; opacity: 0.84; filter: saturate(1.1); pointer-events: none; }
-.orbits {
-  position: fixed; z-index: -1; right: -6vw; top: 50%; width: min(78vh, 52vw); aspect-ratio: 1; translate: 0 -50%;
-  pointer-events: none; opacity: 0.9;
+/* The eclipse, then a veil that keeps the text side dark, then moving film grain. */
+.eclipse { position: fixed; inset: 0; z-index: -3; width: 100%; height: 100%; opacity: 0; transition: opacity 1.2s var(--ease-out); pointer-events: none; }
+.eclipse.on { opacity: 1; }
+.veil {
+  position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    linear-gradient(100deg, rgba(4, 6, 6, 0.94) 0%, rgba(4, 6, 6, 0.8) 30%, rgba(4, 6, 6, 0.18) 56%, transparent 78%),
+    linear-gradient(0deg, rgba(4, 6, 6, 0.6), transparent 42%);
 }
-.orbits ellipse { fill: none; stroke: #1fb880; stroke-width: 1; vector-effect: non-scaling-stroke; }
-.orbits .ring { stroke-opacity: 0.13; }
-/* A brighter arc travels round each orbit: a dash moving along the ellipse's own path. */
-.orbits .arc { stroke-opacity: 0.6; stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 64 936; animation: orbit 70s linear infinite; }
-.orbits .arc.b { stroke-dasharray: 110 890; animation-duration: 110s; animation-delay: -40s; }
-.orbits .arc.c { stroke-dasharray: 40 960; animation-duration: 48s; animation-delay: -12s; }
-.orbits .arc.d { stroke-dasharray: 150 850; animation-duration: 160s; animation-delay: -90s; stroke-opacity: 0.4; }
-.orbits .core { fill: #020303; stroke: #1fb880; stroke-width: 2; filter: drop-shadow(0 0 10px rgba(31, 184, 128, 0.55)); }
-@keyframes orbit { to { stroke-dashoffset: -1000; } }
-@media (max-width: 900px) { .orbits { display: none; } }
+.grain {
+  position: fixed; inset: -30%; z-index: -1; pointer-events: none; mix-blend-mode: overlay; opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 200px 200px; animation: grain 0.7s steps(6) infinite;
+}
+@keyframes grain { 0% { transform: translate(0, 0); } 20% { transform: translate(-3%, 2%); } 40% { transform: translate(2%, -3%); } 60% { transform: translate(-2%, 3%); } 80% { transform: translate(3%, -2%); } 100% { transform: translate(0, 0); } }
 
 /* Header */
-.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px clamp(20px, 4vw, 40px); }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px var(--gutter); }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--fg);
   font: 600 15px/1 "Barlow Condensed", "Barlow", sans-serif; letter-spacing: 0.26em; text-transform: uppercase; }
 .brand i { width: 11px; height: 11px; border-radius: 50%; background: #020303; box-shadow: 0 0 0 1.5px #1fb880, 0 0 10px rgba(31, 184, 128, 0.5); }
@@ -61,26 +61,20 @@ a { color: inherit; }
   display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border-radius: 999px;
   color: var(--muted); font-size: 13.5px; text-decoration: none; transition: background 160ms, color 160ms;
 }
-.quiet:hover, .quiet:focus-visible { background: rgba(255, 255, 255, 0.07); color: var(--fg); outline: none; }
+.quiet:hover, .quiet:focus-visible { background: rgba(255, 255, 255, 0.08); color: var(--fg); outline: none; }
 .quiet[aria-current="page"] { color: var(--fg); }
 
-/* The column */
-main { flex: 1; display: flex; align-items: center; padding: 28px 20px 56px var(--gutter); }
-.col { width: 100%; max-width: 29rem; }
-.col.wide { max-width: 44rem; }
-main.docs { align-items: flex-start; padding-top: clamp(24px, 6vh, 64px); }
-
-.status { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; color: var(--muted); font-size: 13px; }
-.status i { width: 6px; height: 6px; border-radius: 50%; background: #1fb880; box-shadow: 0 0 8px rgba(31, 184, 128, 0.7); }
+/* Hero: the copy sits low on the left, the eclipse fills the rest. */
+.hero { flex: none; min-height: calc(100dvh - 66px); display: flex; align-items: flex-end; padding: 24px var(--gutter) clamp(28px, 7vh, 72px); }
+.copy { width: 100%; max-width: 34rem; }
+.eyebrow { margin: 0 0 14px; color: rgba(232, 238, 232, 0.62); font: 500 11.5px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; display: flex; align-items: center; gap: 9px; }
+.eyebrow i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); }
 h1 {
-  margin: 0 0 16px; color: var(--fg); font: 600 clamp(2.5rem, 6.2vw, 4.25rem)/0.95 "Barlow Condensed", "Barlow", sans-serif;
-  letter-spacing: 0.14em; text-transform: uppercase;
+  margin: 0; color: var(--fg); font: 400 clamp(2.3rem, 4.4vw, 4rem)/1.04 var(--serif); letter-spacing: -0.005em; text-wrap: balance;
 }
-h1.small { font-size: clamp(1.9rem, 4vw, 2.6rem); letter-spacing: 0.1em; }
-.lead { margin: 0 0 26px; max-width: 27rem; color: var(--body); font-size: 16.5px; }
-.col.wide .lead { max-width: 36rem; }
+h1 em, h2 em { font-style: italic; color: var(--accent); }
+.lead { margin: 18px 0 0; max-width: 29rem; color: rgba(214, 220, 214, 0.78); font-size: 16px; }
 
-/* The gunmetal primary with the green sheen that travels across on hover. */
 .gm {
   display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 16px 0 13px; border: 0; border-radius: 999px;
   background: linear-gradient(110deg, transparent 35%, var(--gm-sheen) 50%, transparent 65%) 120% 0 / 250% 100% no-repeat, var(--gm-bg);
@@ -90,40 +84,45 @@ h1.small { font-size: clamp(1.9rem, 4vw, 2.6rem); letter-spacing: 0.1em; }
 .gm:hover, .gm:focus-visible { background-position: -20% 0, 0 0; filter: brightness(1.06); }
 .gm:focus-visible { outline: 2px solid rgba(110, 220, 165, 0.45); outline-offset: 2px; }
 .gm svg { width: 14px; height: 14px; flex: none; opacity: 0.85; }
-.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 .actions .yours { order: -1; }
-.note { margin: 12px 0 0; color: var(--faint); font-size: 13px; line-height: 1.5; }
 
-/* Getting in */
-.block { margin-top: 44px; }
-h2 { margin: 0 0 10px; color: var(--muted); font: 500 13px/1.4 "Barlow", sans-serif; letter-spacing: 0.02em; }
+/* Small mono facts under the buttons. */
+.facts { display: flex; flex-wrap: wrap; gap: 6px 0; margin: 20px 0 0; padding: 0; list-style: none; color: rgba(222, 228, 222, 0.5); font: 400 12px/1.5 var(--mono); }
+.facts li { padding-right: 14px; margin-right: 14px; border-right: 1px solid var(--hair); }
+.facts li:last-child { border: 0; margin: 0; padding: 0; }
+.facts b { color: rgba(238, 242, 238, 0.86); font-weight: 500; margin-left: 6px; }
+
+/* Below the hero */
+.below { padding: clamp(40px, 9vh, 96px) var(--gutter) 40px; }
+.below .inner { max-width: 30rem; }
+h2 { margin: 0 0 18px; color: var(--fg); font: 400 clamp(1.5rem, 2.4vw, 2rem)/1.1 var(--serif); }
 .steps { margin: 0; padding: 0; list-style: none; counter-reset: step; }
-.steps li { counter-increment: step; display: grid; grid-template-columns: 1.5rem 1fr; padding: 5px 0; color: var(--muted); font-size: 14.5px; line-height: 1.5; }
-.steps li::before { content: counter(step); color: var(--faint); font-variant-numeric: tabular-nums; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 2.4rem 1fr; padding: 11px 0; border-top: 1px solid var(--hair); color: var(--muted); font-size: 15px; line-height: 1.5; }
+.steps li::before { content: "0" counter(step); color: var(--faint); font: 400 12px/1.9 var(--mono); }
 .steps b { color: var(--fg); font-weight: 500; }
-.more { margin: 26px 0 0 -11px; }
-.more .quiet { color: var(--live); }
+.more { margin: 22px 0 0 -11px; }
+.more .quiet { color: var(--accent); }
 .more .quiet:hover { color: var(--fg); }
-
-footer { padding: 0 20px 22px var(--gutter); color: var(--faint); font-size: 12.5px; }
+footer { padding: 0 var(--gutter) 26px; color: var(--faint); font: 400 12px/1.5 var(--mono); }
 
 /* How to play */
-.doc { margin-top: 40px; }
-.doc h2 { margin-bottom: 14px; color: var(--fg); font: 600 1.15rem/1.2 "Barlow Condensed", "Barlow", sans-serif; letter-spacing: 0.14em; text-transform: uppercase; }
+main.docs { flex: 1; padding: clamp(28px, 9vh, 96px) var(--gutter) 40px; }
+main.docs .copy { max-width: 44rem; }
+main.docs h1 { font-size: clamp(2rem, 3.6vw, 3.1rem); }
+.doc { margin-top: 48px; }
 .doc p { margin: 0 0 12px; max-width: 38rem; }
 .doc p b, .doc li b { color: var(--fg); font-weight: 500; }
 .doc ul { margin: 0; padding: 0; list-style: none; max-width: 38rem; }
-.doc ul li { padding: 7px 0 7px 16px; position: relative; }
-.doc ul li::before { content: ""; position: absolute; left: 0; top: 1.05em; width: 5px; height: 1px; background: var(--faint); }
+.doc ul li { padding: 8px 0 8px 18px; position: relative; }
+.doc ul li::before { content: ""; position: absolute; left: 0; top: 1.15em; width: 7px; height: 1px; background: var(--faint); }
 
 kbd {
-  display: inline-block; min-width: 1.55em; padding: 1px 6px 2px; border-radius: 5px; text-align: center;
-  background: linear-gradient(180deg, #262a29, #1a1d1c); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07), 0 1px 0 rgba(0, 0, 0, 0.5);
-  color: var(--fg); font: 500 12.5px/1.5 "Barlow", sans-serif; letter-spacing: 0.02em; white-space: nowrap;
+  display: inline-block; min-width: 1.6em; padding: 1px 6px 2px; border-radius: 5px; text-align: center;
+  background: linear-gradient(180deg, #262a29, #1a1d1c); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 1px 0 rgba(0, 0, 0, 0.5);
+  color: var(--fg); font: 500 12px/1.55 var(--mono); white-space: nowrap;
 }
-
-/* Keyboard or controller: two radio buttons pick which table shows. */
-.switch { display: inline-flex; gap: 2px; padding: 3px; margin-bottom: 14px; border-radius: 999px; background: rgba(255, 255, 255, 0.045); box-shadow: inset 0 0 0 1px var(--hair); }
+.switch { display: inline-flex; gap: 2px; padding: 3px; margin-bottom: 14px; border-radius: 999px; background: rgba(8, 10, 10, 0.5); box-shadow: inset 0 0 0 1px var(--hair); }
 .switch label { height: 28px; padding: 0 13px; display: inline-flex; align-items: center; border-radius: 999px; color: var(--muted); font-size: 13.5px; cursor: pointer; transition: color 160ms; }
 .switch label:hover { color: var(--fg); }
 .pick { position: absolute; opacity: 0; pointer-events: none; }
@@ -131,31 +130,28 @@ kbd {
 #pick-pad:checked ~ .switch label[for="pick-pad"] { background: var(--gm-bg); box-shadow: var(--gm-edge); color: var(--gm-fg); }
 #pick-keys:focus-visible ~ .switch label[for="pick-keys"],
 #pick-pad:focus-visible ~ .switch label[for="pick-pad"] { outline: 2px solid rgba(110, 220, 165, 0.45); outline-offset: 2px; }
-.keys { display: none; margin: 0; max-width: 34rem; }
+.keys { display: none; margin: 0; max-width: 34rem; grid-template-columns: minmax(9.5rem, 15rem) 1fr; }
 #pick-keys:checked ~ .keys.for-keys, #pick-pad:checked ~ .keys.for-pad { display: grid; }
-.keys { grid-template-columns: minmax(9.5rem, 15rem) 1fr; }
-.keys dt, .keys dd { margin: 0; padding: 7px 0; border-top: 1px solid var(--hair); }
+.keys dt, .keys dd { margin: 0; padding: 8px 0; border-top: 1px solid var(--hair); }
 .keys dt { color: var(--muted); }
 .keys dd { color: var(--body); }
-.keys dt:first-of-type, .keys dt:first-of-type + dd { border-top: 0; }
 .aside { margin-top: 12px; color: var(--faint); font-size: 13.5px; max-width: 34rem; }
 
-/* One quiet reveal as the page arrives. */
-.rise { animation: rise 0.7s var(--ease-out) both; }
-.rise:nth-child(2) { animation-delay: 60ms; }
-.rise:nth-child(3) { animation-delay: 120ms; }
-.rise:nth-child(4) { animation-delay: 180ms; }
-.rise:nth-child(5) { animation-delay: 240ms; }
-.rise:nth-child(6) { animation-delay: 300ms; }
-.rise:nth-child(7) { animation-delay: 360ms; }
-@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+.rise { animation: rise 0.8s var(--ease-out) both; }
+.rise:nth-child(2) { animation-delay: 70ms; }
+.rise:nth-child(3) { animation-delay: 140ms; }
+.rise:nth-child(4) { animation-delay: 210ms; }
+.rise:nth-child(5) { animation-delay: 280ms; }
+.rise:nth-child(6) { animation-delay: 350ms; }
+.rise:nth-child(7) { animation-delay: 420ms; }
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } }
 
-@media (max-width: 560px) {
-  :root { --gutter: 22px; }
-  main { padding-right: 20px; }
-  .top nav .quiet { padding: 0 9px; }
+@media (max-width: 760px) {
+  .veil { background: linear-gradient(0deg, rgba(4, 6, 6, 0.94) 0%, rgba(4, 6, 6, 0.72) 46%, rgba(4, 6, 6, 0.05) 74%, transparent 100%); }
+  .facts li { border: 0; padding-right: 0; margin-right: 16px; }
   .keys { grid-template-columns: 1fr; }
   .keys dd { border-top: 0; padding-top: 0; }
+  main.docs .copy { background: linear-gradient(180deg, transparent, rgba(4, 6, 6, 0.4) 6rem); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

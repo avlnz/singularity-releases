@@ -8,56 +8,51 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#030406">
 <link rel="preload" href="fonts/BarlowCondensed-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<canvas class="smoke" aria-hidden="true"></canvas>
-<svg class="orbits" viewBox="0 0 600 600" aria-hidden="true">
-  <defs><radialGradient id="glow"><stop offset="0" stop-color="#1fb880" stop-opacity="0.22"/><stop offset="1" stop-color="#1fb880" stop-opacity="0"/></radialGradient></defs>
-  <circle cx="300" cy="300" r="170" fill="url(#glow)"/>
-  <g transform="rotate(-27 300 300)">
-    <ellipse class="ring" cx="300" cy="300" rx="78" ry="34"/>
-    <ellipse class="ring" cx="300" cy="300" rx="128" ry="56"/>
-    <ellipse class="ring" cx="300" cy="300" rx="178" ry="78"/>
-    <ellipse class="ring" cx="300" cy="300" rx="228" ry="100"/>
-    <ellipse class="ring" cx="300" cy="300" rx="282" ry="124"/>
-    <ellipse class="arc c" pathLength="1000" cx="300" cy="300" rx="78" ry="34"/>
-    <ellipse class="arc" pathLength="1000" cx="300" cy="300" rx="128" ry="56"/>
-    <ellipse class="arc b" pathLength="1000" cx="300" cy="300" rx="178" ry="78"/>
-    <ellipse class="arc" pathLength="1000" cx="300" cy="300" rx="228" ry="100" style="animation-delay:-33s"/>
-    <ellipse class="arc d" pathLength="1000" cx="300" cy="300" rx="282" ry="124"/>
-  </g>
-  <circle class="core" cx="300" cy="300" r="21"/>
-</svg>
+<canvas class="eclipse" data-state="ready" aria-hidden="true"></canvas>
+<div class="veil" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
 <header class="top">
   <a class="brand" href="./"><i></i>Singularity</a>
   <nav aria-label="Pages"><a class="quiet" href="./" aria-current="page">Download</a><a class="quiet" href="play.html">How to play</a></nav>
 </header>
 <main>
-  <div class="col">
-    <p class="status rise"><i></i>Early access, invite only</p>
-    <h1 class="rise">Singularity</h1>
-    <p class="lead rise">A sci-fi action RPG. Everyone shares one city, Port Halden, and fights through the machine-built depths under it, alone or in a party.</p>
-    <div class="actions rise">
-      <a class="gm" id="mac" href="https://github.com/avlnz/singularity-releases/releases/latest/download/Singularity-Launcher-macos.zip"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v8M4.5 7.5 8 11l3.5-3.5M3 13.5h10"/></svg>Download for Mac</a>
-      <a class="gm" id="win" href="https://github.com/avlnz/singularity-releases/releases/latest/download/Singularity-Launcher-windows.zip"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v8M4.5 7.5 8 11l3.5-3.5M3 13.5h10"/></svg>Download for Windows</a>
+  <section class="hero">
+    <div class="copy">
+      <p class="eyebrow rise"><i></i>Early access, invite only</p>
+      <h1 class="rise">One city above.<br><em>Machines</em> below.</h1>
+      <p class="lead rise">Singularity is a sci-fi action RPG. Everyone shares one city, Port Halden, and fights through the machine-built depths under it, alone or in a party.</p>
+      <div class="actions rise">
+        <a class="gm" id="mac" href="https://github.com/avlnz/singularity-releases/releases/latest/download/Singularity-Launcher-macos.zip"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v8M4.5 7.5 8 11l3.5-3.5M3 13.5h10"/></svg>Download for Mac</a>
+        <a class="gm" id="win" href="https://github.com/avlnz/singularity-releases/releases/latest/download/Singularity-Launcher-windows.zip"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5v8M4.5 7.5 8 11l3.5-3.5M3 13.5h10"/></svg>Download for Windows</a>
+      </div>
+      <ul class="facts rise">
+        <li>Launcher<b>60 MB</b></li>
+        <li>Game<b>500 MB</b></li>
+        <li>Controller<b>supported</b></li>
+      </ul>
     </div>
-    <p class="note rise">A small launcher (about 60 MB on Mac, 40 MB on Windows). It installs the game, about 500 MB, and keeps it up to date.</p>
-
-    <section class="block rise" aria-labelledby="in">
-      <h2 id="in">Getting in</h2>
+  </section>
+  <section class="below" aria-labelledby="in">
+    <div class="inner">
+      <h2 id="in">Getting <em>in</em></h2>
       <ol class="steps">
         <li><span><b>Open the launcher.</b> Let the download finish, then unzip it. On a Mac, move it into Applications. Windows may warn about an unknown publisher: choose More info, then Run anyway.</span></li>
         <li><span><b>Sign in with email.</b> Use the address you were invited with.</span></li>
         <li><span><b>Click the link in the email,</b> then go back to the launcher.</span></li>
-        <li><span><b>Press Play.</b> You arrive in Port Halden with everyone who is online.</span></li>
+        <li><span><b>Press Play.</b> The launcher installs the game and keeps it up to date. You arrive in Port Halden with everyone who is online.</span></li>
       </ol>
-    </section>
-    <p class="more rise"><a class="quiet" href="play.html">How to play: controls, parties and controllers <span aria-hidden="true">&rarr;</span></a></p>
-  </div>
+      <p class="more"><a class="quiet" href="play.html">How to play: controls, parties and controllers <span aria-hidden="true">&rarr;</span></a></p>
+    </div>
+  </section>
 </main>
 <footer>You need an invite to get past sign-in. No invite yet? Ask whoever sent you this page.</footer>
-<script src="smoke.js"></script>
+<script src="eclipse.js"></script>
 <script>
   // Put the download for this computer first.
   var ua = navigator.userAgent || "";
