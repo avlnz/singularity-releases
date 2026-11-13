@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Singularity: how to play</title>
+<meta name="description" content="Controls, parties and controller support for Singularity.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#030406">
+<link rel="preload" href="fonts/BarlowCondensed-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<canvas class="smoke" aria-hidden="true"></canvas>
+<svg class="orbits" viewBox="0 0 600 600" aria-hidden="true">
+  <defs><radialGradient id="glow"><stop offset="0" stop-color="#1fb880" stop-opacity="0.22"/><stop offset="1" stop-color="#1fb880" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="300" cy="300" r="170" fill="url(#glow)"/>
+  <g transform="rotate(-27 300 300)">
+    <ellipse class="ring" cx="300" cy="300" rx="78" ry="34"/>
+    <ellipse class="ring" cx="300" cy="300" rx="128" ry="56"/>
+    <ellipse class="ring" cx="300" cy="300" rx="178" ry="78"/>
+    <ellipse class="ring" cx="300" cy="300" rx="228" ry="100"/>
+    <ellipse class="ring" cx="300" cy="300" rx="282" ry="124"/>
+    <ellipse class="arc c" pathLength="1000" cx="300" cy="300" rx="78" ry="34"/>
+    <ellipse class="arc" pathLength="1000" cx="300" cy="300" rx="128" ry="56"/>
+    <ellipse class="arc b" pathLength="1000" cx="300" cy="300" rx="178" ry="78"/>
+    <ellipse class="arc" pathLength="1000" cx="300" cy="300" rx="228" ry="100" style="animation-delay:-33s"/>
+    <ellipse class="arc d" pathLength="1000" cx="300" cy="300" rx="282" ry="124"/>
+  </g>
+  <circle class="core" cx="300" cy="300" r="21"/>
+</svg>
+<header class="top">
+  <a class="brand" href="./"><i></i>Singularity</a>
+  <nav aria-label="Pages"><a class="quiet" href="./">Download</a><a class="quiet" href="play.html" aria-current="page">How to play</a></nav>
+</header>
+<main class="docs">
+  <div class="col wide">
+    <p class="status rise"><i></i>How to play</p>
+    <h1 class="small rise">Controls and playing together</h1>
+    <p class="lead rise">The game teaches as you go: hints appear when you reach something new, and <kbd>H</kbd> shows the controls for whatever you are holding. This page is the same thing in one place.</p>
+
+    <section class="doc rise" aria-labelledby="controls">
+      <h2 id="controls">Controls</h2>
+      <input class="pick" type="radio" name="device" id="pick-keys" checked>
+      <input class="pick" type="radio" name="device" id="pick-pad">
+      <div class="switch" role="presentation"><label for="pick-keys">Keyboard and mouse</label><label for="pick-pad">Controller</label></div>
+      <dl class="keys for-keys">
+        <dt>Move</dt><dd><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> or left click</dd>
+        <dt>Aim</dt><dd>Mouse</dd>
+        <dt>Attack</dt><dd>Hold the right mouse button</dd>
+        <dt>Dodge</dt><dd><kbd>Space</kbd></dd>
+        <dt>Kinetic Pulse</dt><dd><kbd>Q</kbd></dd>
+        <dt>Crystal power</dt><dd><kbd>E</kbd></dd>
+        <dt>Skill</dt><dd><kbd>C</kbd></dd>
+        <dt>Interact, party up</dt><dd><kbd>F</kbd></dd>
+        <dt>Repair injector</dt><dd><kbd>R</kbd></dd>
+        <dt>Swap weapon</dt><dd><kbd>Tab</kbd> or the mouse wheel</dd>
+        <dt>Swap gear for what is on the ground</dt><dd><kbd>G</kbd></dd>
+        <dt>Inventory</dt><dd><kbd>I</kbd></dd>
+        <dt>Quest log</dt><dd><kbd>J</kbd></dd>
+        <dt>Skill tree</dt><dd><kbd>K</kbd></dd>
+        <dt>Players online</dt><dd><kbd>O</kbd></dd>
+        <dt>Chat</dt><dd><kbd>Enter</kbd>, or hold <kbd>V</kbd> to speak it</dd>
+        <dt>Show the controls</dt><dd><kbd>H</kbd></dd>
+        <dt>Menu and settings</dt><dd><kbd>Esc</kbd></dd>
+        <dt>Full screen</dt><dd><kbd>F11</kbd></dd>
+      </dl>
+      <dl class="keys for-pad">
+        <dt>Move</dt><dd>Left stick</dd>
+        <dt>Aim</dt><dd>Right stick</dd>
+        <dt>Attack</dt><dd><kbd>RT</kbd></dd>
+        <dt>Dodge</dt><dd><kbd>A</kbd></dd>
+        <dt>Kinetic Pulse</dt><dd><kbd>RB</kbd></dd>
+        <dt>Crystal power</dt><dd><kbd>LB</kbd></dd>
+        <dt>Skill</dt><dd><kbd>LT</kbd></dd>
+        <dt>Interact, party up</dt><dd><kbd>X</kbd></dd>
+        <dt>Repair injector</dt><dd><kbd>Y</kbd></dd>
+        <dt>Swap weapon</dt><dd>D-pad left or right</dd>
+        <dt>Swap gear for what is on the ground</dt><dd><kbd>B</kbd></dd>
+        <dt>Inventory</dt><dd>D-pad down</dd>
+        <dt>Quest log</dt><dd>D-pad up</dd>
+        <dt>Show the controls</dt><dd><kbd>View</kbd></dd>
+        <dt>Menu and settings</dt><dd><kbd>Menu</kbd></dd>
+        <dt>In menus</dt><dd><kbd>A</kbd> confirms, <kbd>B</kbd> goes back</dd>
+      </dl>
+      <p class="aside">Settings has a second mouse mode, Classic, where left click attacks as well as moves.</p>
+    </section>
+
+    <section class="doc rise" aria-labelledby="pad">
+      <h2 id="pad">On a controller</h2>
+      <p>The whole game plays on a controller: plug one in and the on-screen prompts switch to its buttons, shown with Xbox-style names. Three things still want a keyboard or the pause menu:</p>
+      <ul>
+        <li><b>Skill tree and players list</b> are in the pause menu, under Skills and Players.</li>
+        <li><b>Party invites:</b> walk up to whoever invited you and press <kbd>X</kbd> to join.</li>
+        <li><b>Chat</b> needs a keyboard.</li>
+      </ul>
+    </section>
+
+    <section class="doc rise" aria-labelledby="together">
+      <h2 id="together">Playing together</h2>
+      <p>Everyone who is online is in the same Port Halden. You see each other in the streets and on the minimap, and chat reaches everyone.</p>
+      <ul>
+        <li><b>Party up in one press.</b> Walk up to a player and press <kbd>F</kbd>. They get a banner and press <kbd>Y</kbd> to join you, or <kbd>N</kbd> to pass.</li>
+        <li><b>Or pick from the list.</b> <kbd>O</kbd> shows who is online and where, with Invite and Join beside each name.</li>
+        <li><b>In a party</b> you follow the leader down the lift and fight the same machines. Your loot is your own: machines you helped kill drop for you.</li>
+        <li><b>Leaving</b> is in the players list.</li>
+      </ul>
+    </section>
+
+    <section class="doc rise" aria-labelledby="loop">
+      <h2 id="loop">What you do</h2>
+      <ul>
+        <li><b>Port Halden</b> is the city: traders, other players, your ship, and the freight lift down. The minimap always points to the lift.</li>
+        <li><b>Contracts</b> start at the lift's board: three floors down with a boss at the bottom. There are five tiers, and clearing one opens the next.</li>
+        <li><b>Raids</b> open for a tier once you have cleared its contract: five floors, two bosses and more loot.</li>
+        <li><b>The endless depths</b> are on the same board, for going as deep as you can.</li>
+        <li><b>Levels and skills.</b> Kills and finished runs give XP. Every level gives a skill point to spend in the skill tree (<kbd>K</kbd>): Radiant, Prism or Void.</li>
+        <li><b>The Nightjar</b> is your ship on the landing pad, with the armory, the workbench and the crystal vault.</li>
+      </ul>
+    </section>
+
+    <section class="doc rise" aria-labelledby="early">
+      <h2 id="early">Early access</h2>
+      <p>This is an early build, so things will break. Tell whoever invited you what you ran into: what you were doing, and what you saw.</p>
+      <p class="more" style="margin-top:18px"><a class="quiet" href="./"><span aria-hidden="true">&larr;</span> Back to the download</a></p>
+    </section>
+  </div>
+</main>
+<footer></footer>
+<script src="smoke.js"></script>
+</body>
+</html>
