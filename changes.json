@@ -1,5 +1,20 @@
 [
  {
+  "version": "2026.1114.1750",
+  "date": "2026-11-14",
+  "title": "New blade moves",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Blade lunge: swing right after a dodge to close the gap with a longer, harder strike."
+   },
+   {
+    "tag": "New",
+    "text": "Blade deflect: while the blade is moving it turns machine bolts back at whatever fired them."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.1734",
   "date": "2026-11-14",
   "title": "Difficulty that follows each player",
