@@ -52,11 +52,29 @@ a { color: inherit; }
 @keyframes grain { 0% { transform: translate(0, 0); } 20% { transform: translate(-3%, 2%); } 40% { transform: translate(2%, -3%); } 60% { transform: translate(-2%, 3%); } 80% { transform: translate(3%, -2%); } 100% { transform: translate(0, 0); } }
 
 /* Header */
-.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px var(--gutter); }
+/* Floating glass pills, as on renvoi.co/intangle (Hayds, 2026-11-14: "more visible, more
+   noticable floating bubble buttons like we use in renvoi.co/intangle website header"): the name
+   on the left, the pages on the right, the current page filled emerald. */
+.top { position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 14px var(--gutter); pointer-events: none; }
+.top > * { pointer-events: auto; }
+.brand, .top nav {
+  height: 44px; background: rgba(38, 38, 44, 0.8); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 8px 32px rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(24px) saturate(1.5); backdrop-filter: blur(24px) saturate(1.5);
+}
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--fg);
   font: 600 15px/1 "Barlow Condensed", "Barlow", sans-serif; letter-spacing: 0.26em; text-transform: uppercase; }
 .brand i { width: 11px; height: 11px; border-radius: 50%; background: #020303; box-shadow: 0 0 0 1.5px #1fb880, 0 0 10px rgba(31, 184, 128, 0.5); }
-.top nav { display: flex; gap: 4px; }
+.brand { padding: 0 16px; }
+.top nav { display: flex; align-items: center; gap: 2px; padding: 4px; }
+.top nav .quiet { height: 34px; padding: 0 14px; border-radius: 12px; font-size: 13.5px; font-weight: 500; color: rgba(250, 250, 250, 0.74); white-space: nowrap; }
+.top nav .quiet[aria-current="page"] { background: rgb(19, 108, 81); color: #fff; }
+@media (max-width: 560px) {
+  .brand { padding: 0 15px; }
+  .brand span { display: none; }
+  .top nav .quiet { padding: 0 9px; font-size: 12.5px; }
+}
 .quiet {
   display: inline-flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px; border-radius: 999px;
   color: var(--muted); font-size: 13.5px; text-decoration: none; transition: background 160ms, color 160ms;

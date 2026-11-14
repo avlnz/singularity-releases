@@ -16,7 +16,7 @@
   /* What's new. The list comes from changes.json (the launcher reads the same file); the
      markup below is a pre-rendered copy so the page reads without scripts. */
   main.docs .log-wrap { max-width: 52rem; display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0 clamp(20px, 3vw, 44px); margin-top: 44px; }
-  .days { position: sticky; top: 22px; align-self: start; margin: 0; padding: 0; list-style: none; font: 400 12px/1.4 var(--mono); }
+  .days { position: sticky; top: 88px; align-self: start; margin: 0; padding: 0; list-style: none; font: 400 12px/1.4 var(--mono); }
   .days li { margin: 0; }
   .days a { display: flex; justify-content: space-between; gap: 8px; padding: 7px 10px 7px 11px; border-left: 1px solid var(--hair); color: var(--faint); text-decoration: none; transition: color 160ms, border-color 160ms; }
   .days a span { color: rgba(222, 228, 222, 0.32); }
@@ -29,7 +29,7 @@
     linear-gradient(100deg, rgba(4, 6, 6, 0.95) 0%, rgba(4, 6, 6, 0.9) 48%, rgba(4, 6, 6, 0.5) 72%, rgba(4, 6, 6, 0.15) 90%),
     linear-gradient(0deg, rgba(4, 6, 6, 0.6), transparent 42%); }
   .log { min-width: 0; }
-  .rel { padding: 26px 0 30px; border-top: 1px solid var(--hair); scroll-margin-top: 16px; }
+  .rel { padding: 26px 0 30px; border-top: 1px solid var(--hair); scroll-margin-top: 84px; }
   .rel:first-child { border-top: 0; padding-top: 0; }
   .rel-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin: 0 0 8px; font: 400 12px/1.5 var(--mono); }
   .rel-meta time { color: rgba(238, 242, 238, 0.86); font-weight: 500; }
@@ -45,13 +45,6 @@
   .tag-fixed { color: #a8b4ad; opacity: 0.7; }
   .to-top { margin: 6px 0 0 -11px; }
 
-  /* Three page links still fit beside the name on a phone. */
-  @media (max-width: 440px) {
-    .top { gap: 6px; padding-left: 16px; padding-right: 10px; }
-    .brand { gap: 8px; letter-spacing: 0.16em; font-size: 14px; }
-    .top nav { gap: 0; }
-    .top .quiet { padding: 0 7px; font-size: 13px; white-space: nowrap; }
-  }
   @media (max-width: 760px) {
     .veil { background: linear-gradient(0deg, rgba(4, 6, 6, 0.95) 0%, rgba(4, 6, 6, 0.88) 60%, rgba(4, 6, 6, 0.55) 85%, rgba(4, 6, 6, 0.3) 100%); }
     main.docs .log-wrap { grid-template-columns: minmax(0, 1fr); margin-top: 30px; }
@@ -69,7 +62,7 @@
 <div class="veil" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 <header class="top" id="top">
-  <a class="brand" href="./"><i></i>Singularity</a>
+  <a class="brand" href="./"><i></i><span>Singularity</span></a>
   <nav aria-label="Pages"><a class="quiet" href="./">Download</a><a class="quiet" href="play.html">How to play</a><a class="quiet" href="changes.html" aria-current="page">What's new</a></nav>
 </header>
 <main class="docs">
