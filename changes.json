@@ -1,264 +1,699 @@
 [
-  {
-    "version": "2026.1114.1629",
-    "versions": ["2026.1114.1609", "2026.1114.1624", "2026.1114.1629"],
-    "date": "2026-11-14",
-    "title": "Updates from inside the game, steadier co-op, less loot",
-    "items": [
-      {"tag": "New", "text": "A running game tells you when a newer version is out. RESTART AND UPDATE in the pause menu closes it, updates and starts it again."},
-      {"tag": "Better", "text": "Co-op: vault doors, relays, lockers, cases and coolant bays are in the same places for everyone in a party."},
-      {"tag": "Better", "text": "Players list: nobody can join your world without your invite."},
-      {"tag": "Better", "text": "Very crowded deep floors have more room for effects, so shots and blasts are less likely to go missing or draw wrongly."},
-      {"tag": "Balance", "text": "Loot: a little less of it and far fewer Rare (yellow) drops, with more Uncommon and Epic."},
-      {"tag": "Balance", "text": "Ordinary machines drop gear about one kill in 55 (was 40). A champion's second piece comes one time in five (was three), and champions no longer always drop Rare or better."},
-      {"tag": "Fixed", "text": "The jam signal is started by the party leader, so a party member can no longer skip its waves and still collect the payout."}
-    ]
-  },
-  {
-    "version": "2026.1114.1558",
-    "versions": ["2026.1114.1547", "2026.1114.1558"],
-    "date": "2026-11-14",
-    "title": "See your party fight, a steadier picture on Mac",
-    "items": [
-      {"tag": "New", "text": "Co-op: you see other players shoot, with muzzle flashes and tracers along their aim."},
-      {"tag": "New", "text": "The players list and the status line say whether you are in a party and who leads it."},
-      {"tag": "New", "text": "Upscaling setting: Auto, Stable or Sharp."},
-      {"tag": "New", "text": "Slipstream, a Prism skill that shortens the dodge cooldown."},
-      {"tag": "Better", "text": "Taking the lift to a depth a recent party member is already on puts you on their floor."},
-      {"tag": "Better", "text": "Armory: a weapon you take goes to your bag, and what you hold stays in your hands."},
-      {"tag": "Balance", "text": "Dodge has a 1.6 second cooldown (was 0.55), with a small ring when it is ready again."},
-      {"tag": "Fixed", "text": "On a Mac the picture uses a steadier upscaler by default."},
-      {"tag": "Fixed", "text": "The Nightjar's wall panels and the city's street fronts and columns are solid, so nobody stands inside them."}
-    ]
-  },
-  {
-    "version": "2026.1114.1538",
-    "versions": ["2026.1114.1502", "2026.1114.1523", "2026.1114.1538"],
-    "date": "2026-11-14",
-    "title": "Invite codes and an easier first launch",
-    "items": [
-      {"tag": "New", "text": "Invite codes: type a code in the launcher once and you are in. No account or email needed."},
-      {"tag": "New", "text": "The launcher has a How to play button."},
-      {"tag": "New", "text": "The game can report errors to help fix them."},
-      {"tag": "Better", "text": "First launch: the launcher starts the download by itself, says what it is getting and that Play comes next."},
-      {"tag": "Better", "text": "Inventory: an item's details sit beside the panel, always on screen, next to what you have equipped in that slot."},
-      {"tag": "Better", "text": "Inventory cards are nearly opaque and easier to read."},
-      {"tag": "Better", "text": "With another player in your world, opening a menu no longer pauses the game for everyone. Alone, it pauses as before."},
-      {"tag": "Fixed", "text": "Player names show the name you were invited as, or your computer's user name, instead of everyone on Windows being Pilot."}
-    ]
-  },
-  {
-    "version": "2026.1114.1131",
-    "versions": ["2026.1114.1053", "2026.1114.1131"],
-    "date": "2026-11-14",
-    "title": "A new opening",
-    "items": [
-      {"tag": "New", "text": "The game starts on a fight: First Contract is the first quest, and its marker points at the freight lift."},
-      {"tag": "Better", "text": "Shore Leave, the tour of the ship and the city, opens after your first run as side work."},
-      {"tag": "Better", "text": "First Contract's last step, learning a skill, can be done anywhere."},
-      {"tag": "Better", "text": "Coming home from a run puts you back at the entrance you left by: freight lift, raid gate or deep shaft."}
-    ]
-  },
-  {
-    "version": "2026.1114.0148",
-    "versions": ["2026.1114.0126", "2026.1114.0148"],
-    "date": "2026-11-14",
-    "title": "Arc Blade and legendary powers that change builds",
-    "items": [
-      {"tag": "New", "text": "Arc Blade, an energy sword. It drops as loot, sits in a weapon slot and is on the armory's close range rack."},
-      {"tag": "New", "text": "Arc Blade stances on Z or the right stick: Light (a fast three-swing chain), Balanced (wide arcs that catch a group) and Heavy (two slow swings that stagger, then a slam)."},
-      {"tag": "New", "text": "The last swing of a chain is a finisher powered by your alignment: Radiant throws a wave of light and raises a ward, Void drains what it hits, and balance returns Current."},
-      {"tag": "New", "text": "Eleven new legendary powers, 17 in all."},
-      {"tag": "New", "text": "Overdrive, Glass Cannon, Momentum, Executioner, Shrapnel and Ward Engine change how you fight."},
-      {"tag": "New", "text": "Sunforged, Afterimage, Long Reach and Resonance rebuild a skill around the weapon: a free Sunlance, Phase Step reset on a kill, Void Lash on three machines, a faster Kinetic Pulse."},
-      {"tag": "New", "text": "Sweeping Edge, a legendary power for blades only."},
-      {"tag": "Better", "text": "Legendaries you already own keep the power they had."}
-    ]
-  },
-  {
-    "version": "2026.1114.0044",
-    "versions": ["2026.1114.0022", "2026.1114.0044"],
-    "date": "2026-11-14",
-    "title": "Floor conditions and best times",
-    "items": [
-      {"tag": "New", "text": "Floor conditions: about two run floors in three roll a twist: Overclocked, Plated, Unstable cores, Rich seam, Champion nest, Current surge or Brittle."},
-      {"tag": "New", "text": "The condition shows beside the depth and is announced when you arrive. Harder ones pay more XP or better finds."},
-      {"tag": "New", "text": "Results show your best time for each tier's contract and raid."},
-      {"tag": "Better", "text": "Launcher: a new eclipse backdrop whose glow shows what it is doing: emerald when the game is ready, amber while checking or downloading, red when something failed."}
-    ]
-  },
-  {
-    "version": "2026.1113.2300",
-    "versions": ["2026.1113.2221", "2026.1113.2300"],
-    "date": "2026-11-13",
-    "title": "Three ways down, a new Nightjar interior",
-    "items": [
-      {"tag": "New", "text": "Three ways down, in three parts of the city: contracts at the freight lift, raids from a raid gate and the endless depths from a deep shaft."},
-      {"tag": "New", "text": "Each way down has its own lift platform and light colour, and the minimap points to each by name: CONTRACTS, RAIDS, DEPTHS."},
-      {"tag": "Better", "text": "The Nightjar's interior is rebuilt in white panels with gold trim, with windows on the hull walls, new shelves, consoles and capsules."},
-      {"tag": "Fixed", "text": "Grey squares no longer show through the Nightjar's floor."}
-    ]
-  },
-  {
-    "version": "2026.1113.1850",
-    "versions": ["2026.1113.0211", "2026.1113.1850"],
-    "date": "2026-11-13",
-    "title": "Playing together",
-    "items": [
-      {"tag": "New", "text": "Players list on O and in the pause menu: who is online and where, with Invite beside each name."},
-      {"tag": "New", "text": "Notices when a player comes online or goes down on a run."},
-      {"tag": "New", "text": "The minimap always points to the way down and to every other player in the zone."},
-      {"tag": "Better", "text": "One press on another player invites them. An invite is a banner you answer with Y or N."},
-      {"tag": "Fixed", "text": "Wall lamps on run floors no longer glow as a bright slab through walls, and gunfire no longer makes the fog strobe."}
-    ]
-  },
-  {
-    "version": "2026.1112.1640",
-    "date": "2026-11-12",
-    "title": "Skill tree and raids",
-    "items": [
-      {"tag": "New", "text": "Skill tree on K and in the pause menu: three branches, three tiers and 18 skills."},
-      {"tag": "New", "text": "Every level gives a skill point. Passives take three ranks, and each tier opens with points spent in its branch."},
-      {"tag": "New", "text": "New passives: Vigour, Zeal, Reserve, Fleet, Focus, Ruin and Dread."},
-      {"tag": "New", "text": "Raids: clear a tier's contract to open its raid. Five floors, a Relay Warden holding the lift on floor 3 and the Overseer on floor 5."},
-      {"tag": "New", "text": "Raids pay more XP, better loot luck and 4 or 5 vault pieces."}
-    ]
-  },
-  {
-    "version": "2026.1112.1350",
-    "date": "2026-11-12",
-    "title": "Speak to chat",
-    "items": [
-      {"tag": "New", "text": "Hold V to speak a chat line. It is turned into text on your own computer and lands in the chat line for you to check; Enter sends it."},
-      {"tag": "New", "text": "The speech model (57 MB) downloads once, the first time you use it."}
-    ]
-  },
-  {
-    "version": "2026.1111.2147",
-    "versions": ["2026.1111.1949", "2026.1111.2147"],
-    "date": "2026-11-11",
-    "title": "Chat, parties and a new quest log",
-    "items": [
-      {"tag": "New", "text": "Chat: Enter opens a line, and everyone online sees it with your name and where you are. You stand still while typing."},
-      {"tag": "New", "text": "Parties: walk up to another player in a safe zone to invite them. They answer yes or no and join you."},
-      {"tag": "Better", "text": "Quest log: cards in two columns with a progress bar, ticked steps, the current step in gold with where to go, and the reward."},
-      {"tag": "Better", "text": "A calmer city: fewer people on the streets, walking between real places and stopping a while when they arrive."},
-      {"tag": "Better", "text": "The landing pad is kept clear, nobody appears right next to you when you arrive, and passing remarks are rarer."}
-    ]
-  },
-  {
-    "version": "2026.1111.0055",
-    "date": "2026-11-11",
-    "title": "A living city",
-    "items": [
-      {"tag": "New", "text": "Port Halden has a crowd: people, service robots, sweepers, haulers, dock robots and drones, groups stopped to talk and people at the stalls."},
-      {"tag": "New", "text": "Four street traders at stalls: noodles, weapon mods, surplus guns and drinks."},
-      {"tag": "Better", "text": "People far out of view stop animating, which saves frame time."},
-      {"tag": "Fixed", "text": "Sparks, steam vents and flickering lamps no longer flash inside the fog like lightning in a cloud."}
-    ]
-  },
-  {
-    "version": "2026.1110.1518",
-    "date": "2026-11-10",
-    "title": "Port Halden, the city",
-    "items": [
-      {"tag": "New", "text": "Port Halden is the hub: one city with the Nightjar on a landing pad, a market and the freight lift that starts every run."},
-      {"tag": "New", "text": "Lifts from the depths bring you back up to the city, and quests point at the city and contract floors."},
-      {"tag": "Better", "text": "Street fronts built from sci-fi panels, with shopfronts at street level and windows lit warm, pale and emerald."},
-      {"tag": "Better", "text": "Roof decks, plazas with light masts and cargo stacks, a paved landing pad with landing lights and strings of bulbs round the market."},
-      {"tag": "Better", "text": "The city at night is easier to read, with lighter fronts and softer edges to the screen."},
-      {"tag": "Fixed", "text": "Towers between you and the camera are cut away, so they no longer black out part of the screen."}
-    ]
-  },
-  {
-    "version": "2026.1102.0047",
-    "versions": ["2026.1101.1936", "2026.1101.2204", "2026.1102.0047"],
-    "date": "2026-11-01",
-    "title": "Much smaller updates",
-    "items": [
-      {"tag": "Better", "text": "Updates come in parts and most are a few MB. The large art download only comes again when the art changes."},
-      {"tag": "Better", "text": "On a Mac the launcher opens straight away, with no unknown developer warning."}
-    ]
-  },
-  {
-    "version": "2026.1031.1901",
-    "date": "2026-10-31",
-    "title": "Windows",
-    "items": [
-      {"tag": "New", "text": "Singularity runs on Windows, with its own launcher."},
-      {"tag": "Better", "text": "HUD corners read as one block: each card is as wide as the cluster under it."},
-      {"tag": "Better", "text": "The way into contract runs is labelled, and until you clear Tier I a reminder says where it is."}
-    ]
-  },
-  {
-    "version": "2026.1031.1645",
-    "versions": ["2026.1031.1524", "2026.1031.1645"],
-    "date": "2026-10-31",
-    "title": "City districts",
-    "items": [
-      {"tag": "New", "text": "Contract floors from Tier II up are city districts."},
-      {"tag": "Fixed", "text": "Launcher: Pause and Resume really pause and resume the download."}
-    ]
-  },
-  {
-    "version": "2026.1031.1355",
-    "date": "2026-10-31",
-    "title": "Contracts, levels and a companion",
-    "items": [
-      {"tag": "New", "text": "Contracts: three floors with the Foundry Overseer at the bottom, across five tiers. Clearing one opens the next."},
-      {"tag": "New", "text": "A free supply cache on contract floors: pick one of three mods or an overclock."},
-      {"tag": "New", "text": "Character levels and XP from kills and finished runs, with a level and XP bar top left."},
-      {"tag": "New", "text": "A companion follows you, fights beside you, draws fire and gets back up 10 seconds after going down. Rename it in the pause menu, or switch it off in Gameplay settings."},
-      {"tag": "Better", "text": "HUD: health and the repair injector bottom left, Current and your abilities bottom right, the middle of the screen clear."},
-      {"tag": "Balance", "text": "Dying on a run keeps your loot and half its XP, and you wake in Port Halden."},
-      {"tag": "Fixed", "text": "The death screen names the floor you were on, and the minimap shows the right depth after loading a save."}
-    ]
-  },
-  {
-    "version": "2026.1030.1415",
-    "versions": ["2026.1030.1230", "2026.1030.1314", "2026.1030.1415"],
-    "date": "2026-10-30",
-    "title": "Less loot, more range, playtest fixes",
-    "items": [
-      {"tag": "New", "text": "Named wrecks can be boarded, and the lift back up returns you beside them."},
-      {"tag": "New", "text": "The launcher has its own icon."},
-      {"tag": "Better", "text": "The map remembers what you explored, and area gates show where they go."},
-      {"tag": "Better", "text": "The camera sits further back, and machines only start fighting once they are on screen or close."},
-      {"tag": "Better", "text": "Smaller updates: the launcher downloads only what changed."},
-      {"tag": "Better", "text": "Station decks have new sci-fi wall panels with viewing windows and warm lamps."},
-      {"tag": "Balance", "text": "Ordinary machines drop an item about one kill in 40 and never Common. Champions always drop one Rare or better piece."},
-      {"tag": "Balance", "text": "Only Rare or better loot shows its label from afar; the rest shows within 5 metres."},
-      {"tag": "Balance", "text": "Corridor hordes on Hard and up stop growing past depth 6."},
-      {"tag": "Fixed", "text": "The constant electric crackle is gone."},
-      {"tag": "Fixed", "text": "No T-pose behind the title screen."}
-    ]
-  },
-  {
-    "version": "2026.1030.1138",
-    "versions": ["2026.1030.1058", "2026.1030.1138"],
-    "date": "2026-10-30",
-    "title": "The loot update, the launcher and a new look",
-    "items": [
-      {"tag": "New", "text": "The Singularity launcher installs the game, keeps it up to date and starts it."},
-      {"tag": "New", "text": "Legendary weapons roll a unique power: Detonator, Leech Relay, Current Siphon, Elite Hunter, Static Charge or Ricochet."},
-      {"tag": "New", "text": "Mods drop from machines at every rarity. Fit them from the bag or by dragging onto a weapon or armour piece."},
-      {"tag": "New", "text": "Weapon affixes that reward a style: Tracker suite, Point-blank rig, Fracture rounds, Salvage loop and Harvest coil."},
-      {"tag": "New", "text": "Containers on dungeon floors: lockers, weapon cases, medical cabinets, supply crates and fallen workers."},
-      {"tag": "New", "text": "Special weapons: the Ricochet Disc Launcher and the Gravity Well Projector, both in the ship armory."},
-      {"tag": "New", "text": "Character appearance: body, skin, hood, nine hairstyles, six hair colours, facial hair and outfit dyes."},
-      {"tag": "Better", "text": "17 new gun models. Fitted mods show on the gun, and Rare or better guns carry a sight."},
-      {"tag": "Better", "text": "Dungeon floors carry lab consoles, specimen capsules, cargo and breakable crates."},
-      {"tag": "Better", "text": "Frame rate on deep floors is much higher (about 30 to about 49 fps at depth 18 on a fast Mac). Default render scale is 0.6."},
-      {"tag": "Better", "text": "A new HUD and inventory in gunmetal and emerald, with bigger ability slots and large cooldown numbers."},
-      {"tag": "Better", "text": "Item and character pictures lose their black boxes."},
-      {"tag": "Better", "text": "Readouts hold up on bright ground, and your character stands out from it."},
-      {"tag": "Better", "text": "New colours across the game: tech glows go emerald, Radiant goes gold and Prism green."},
-      {"tag": "Better", "text": "Launcher downloads can be paused, resume after a restart and retry by themselves after a dropped connection."},
-      {"tag": "Balance", "text": "Machines never start a fight within 12 metres of the arrival lift."},
-      {"tag": "Balance", "text": "Reinforcement waves stop growing past depth 6, though machines still get tougher."},
-      {"tag": "Balance", "text": "The Relay Warden's enraged barrage is lighter."},
-      {"tag": "Fixed", "text": "Dodging no longer turns you into a white ghost."},
-      {"tag": "Fixed", "text": "On a controller, the d-pad in the inventory no longer swaps weapons."}
-    ]
-  }
+ {
+  "version": "2026.1114.1712",
+  "versions": [
+   "2026.1114.1712",
+   "2026.1114.1657",
+   "2026.1114.1643"
+  ],
+  "date": "2026-11-14",
+  "title": "Shared loot, a steadier picture, guns that cool on their own",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Co-op: loot is shared. Everyone in a party sees the same drops in the same places, and picking one up takes it for everyone. Credits and XP stay your own."
+   },
+   {
+    "tag": "New",
+    "text": "Co-op: a locker or case opened by anyone opens for the whole party, and either player can start the jam signal."
+   },
+   {
+    "tag": "New",
+    "text": "Each gun has its own heat. The one in your holster keeps its heat and cools there, with a second slim bar beside the first."
+   },
+   {
+    "tag": "New",
+    "text": "Combat particles setting: turn sparks, embers, smoke and dust off for more speed."
+   },
+   {
+    "tag": "Better",
+    "text": "Other players carry their own weapon, and face the way they walk instead of twitching about."
+   },
+   {
+    "tag": "Better",
+    "text": "The launcher notices a new version while it is open and installs it by itself. It also has a What's new button."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Flashes, giant glowing shapes on characters and missing shots and effects in big fights: the main cause is fixed, and far fewer should remain."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Machines no longer stay wedged against pillars and props."
+   }
+  ]
+ },
+ {
+  "version": "2026.1114.1629",
+  "versions": [
+   "2026.1114.1609",
+   "2026.1114.1624",
+   "2026.1114.1629"
+  ],
+  "date": "2026-11-14",
+  "title": "Updates from inside the game, steadier co-op, less loot",
+  "items": [
+   {
+    "tag": "New",
+    "text": "A running game tells you when a newer version is out. RESTART AND UPDATE in the pause menu closes it, updates and starts it again."
+   },
+   {
+    "tag": "Better",
+    "text": "Co-op: vault doors, relays, lockers, cases and coolant bays are in the same places for everyone in a party."
+   },
+   {
+    "tag": "Better",
+    "text": "Players list: nobody can join your world without your invite."
+   },
+   {
+    "tag": "Better",
+    "text": "Very crowded deep floors have more room for effects, so shots and blasts are less likely to go missing or draw wrongly."
+   },
+   {
+    "tag": "Balance",
+    "text": "Loot: a little less of it and far fewer Rare (yellow) drops, with more Uncommon and Epic."
+   },
+   {
+    "tag": "Balance",
+    "text": "Ordinary machines drop gear about one kill in 55 (was 40). A champion's second piece comes one time in five (was three), and champions no longer always drop Rare or better."
+   },
+   {
+    "tag": "Fixed",
+    "text": "The jam signal is started by the party leader, so a party member can no longer skip its waves and still collect the payout."
+   }
+  ]
+ },
+ {
+  "version": "2026.1114.1558",
+  "versions": [
+   "2026.1114.1547",
+   "2026.1114.1558"
+  ],
+  "date": "2026-11-14",
+  "title": "See your party fight, a steadier picture on Mac",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Co-op: you see other players shoot, with muzzle flashes and tracers along their aim."
+   },
+   {
+    "tag": "New",
+    "text": "The players list and the status line say whether you are in a party and who leads it."
+   },
+   {
+    "tag": "New",
+    "text": "Upscaling setting: Auto, Stable or Sharp."
+   },
+   {
+    "tag": "New",
+    "text": "Slipstream, a Prism skill that shortens the dodge cooldown."
+   },
+   {
+    "tag": "Better",
+    "text": "Taking the lift to a depth a recent party member is already on puts you on their floor."
+   },
+   {
+    "tag": "Better",
+    "text": "Armory: a weapon you take goes to your bag, and what you hold stays in your hands."
+   },
+   {
+    "tag": "Balance",
+    "text": "Dodge has a 1.6 second cooldown (was 0.55), with a small ring when it is ready again."
+   },
+   {
+    "tag": "Fixed",
+    "text": "On a Mac the picture uses a steadier upscaler by default."
+   },
+   {
+    "tag": "Fixed",
+    "text": "The Nightjar's wall panels and the city's street fronts and columns are solid, so nobody stands inside them."
+   }
+  ]
+ },
+ {
+  "version": "2026.1114.1538",
+  "versions": [
+   "2026.1114.1502",
+   "2026.1114.1523",
+   "2026.1114.1538"
+  ],
+  "date": "2026-11-14",
+  "title": "Invite codes and an easier first launch",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Invite codes: type a code in the launcher once and you are in. No account or email needed."
+   },
+   {
+    "tag": "New",
+    "text": "The launcher has a How to play button."
+   },
+   {
+    "tag": "New",
+    "text": "The game can report errors to help fix them."
+   },
+   {
+    "tag": "Better",
+    "text": "First launch: the launcher starts the download by itself, says what it is getting and that Play comes next."
+   },
+   {
+    "tag": "Better",
+    "text": "Inventory: an item's details sit beside the panel, always on screen, next to what you have equipped in that slot."
+   },
+   {
+    "tag": "Better",
+    "text": "Inventory cards are nearly opaque and easier to read."
+   },
+   {
+    "tag": "Better",
+    "text": "With another player in your world, opening a menu no longer pauses the game for everyone. Alone, it pauses as before."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Player names show the name you were invited as, or your computer's user name, instead of everyone on Windows being Pilot."
+   }
+  ]
+ },
+ {
+  "version": "2026.1114.1131",
+  "versions": [
+   "2026.1114.1053",
+   "2026.1114.1131"
+  ],
+  "date": "2026-11-14",
+  "title": "A new opening",
+  "items": [
+   {
+    "tag": "New",
+    "text": "The game starts on a fight: First Contract is the first quest, and its marker points at the freight lift."
+   },
+   {
+    "tag": "Better",
+    "text": "Shore Leave, the tour of the ship and the city, opens after your first run as side work."
+   },
+   {
+    "tag": "Better",
+    "text": "First Contract's last step, learning a skill, can be done anywhere."
+   },
+   {
+    "tag": "Better",
+    "text": "Coming home from a run puts you back at the entrance you left by: freight lift, raid gate or deep shaft."
+   }
+  ]
+ },
+ {
+  "version": "2026.1114.0148",
+  "versions": [
+   "2026.1114.0126",
+   "2026.1114.0148"
+  ],
+  "date": "2026-11-14",
+  "title": "Arc Blade and legendary powers that change builds",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Arc Blade, an energy sword. It drops as loot, sits in a weapon slot and is on the armory's close range rack."
+   },
+   {
+    "tag": "New",
+    "text": "Arc Blade stances on Z or the right stick: Light (a fast three-swing chain), Balanced (wide arcs that catch a group) and Heavy (two slow swings that stagger, then a slam)."
+   },
+   {
+    "tag": "New",
+    "text": "The last swing of a chain is a finisher powered by your alignment: Radiant throws a wave of light and raises a ward, Void drains what it hits, and balance returns Current."
+   },
+   {
+    "tag": "New",
+    "text": "Eleven new legendary powers, 17 in all."
+   },
+   {
+    "tag": "New",
+    "text": "Overdrive, Glass Cannon, Momentum, Executioner, Shrapnel and Ward Engine change how you fight."
+   },
+   {
+    "tag": "New",
+    "text": "Sunforged, Afterimage, Long Reach and Resonance rebuild a skill around the weapon: a free Sunlance, Phase Step reset on a kill, Void Lash on three machines, a faster Kinetic Pulse."
+   },
+   {
+    "tag": "New",
+    "text": "Sweeping Edge, a legendary power for blades only."
+   },
+   {
+    "tag": "Better",
+    "text": "Legendaries you already own keep the power they had."
+   }
+  ]
+ },
+ {
+  "version": "2026.1114.0044",
+  "versions": [
+   "2026.1114.0022",
+   "2026.1114.0044"
+  ],
+  "date": "2026-11-14",
+  "title": "Floor conditions and best times",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Floor conditions: about two run floors in three roll a twist: Overclocked, Plated, Unstable cores, Rich seam, Champion nest, Current surge or Brittle."
+   },
+   {
+    "tag": "New",
+    "text": "The condition shows beside the depth and is announced when you arrive. Harder ones pay more XP or better finds."
+   },
+   {
+    "tag": "New",
+    "text": "Results show your best time for each tier's contract and raid."
+   },
+   {
+    "tag": "Better",
+    "text": "Launcher: a new eclipse backdrop whose glow shows what it is doing: emerald when the game is ready, amber while checking or downloading, red when something failed."
+   }
+  ]
+ },
+ {
+  "version": "2026.1113.2300",
+  "versions": [
+   "2026.1113.2221",
+   "2026.1113.2300"
+  ],
+  "date": "2026-11-13",
+  "title": "Three ways down, a new Nightjar interior",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Three ways down, in three parts of the city: contracts at the freight lift, raids from a raid gate and the endless depths from a deep shaft."
+   },
+   {
+    "tag": "New",
+    "text": "Each way down has its own lift platform and light colour, and the minimap points to each by name: CONTRACTS, RAIDS, DEPTHS."
+   },
+   {
+    "tag": "Better",
+    "text": "The Nightjar's interior is rebuilt in white panels with gold trim, with windows on the hull walls, new shelves, consoles and capsules."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Grey squares no longer show through the Nightjar's floor."
+   }
+  ]
+ },
+ {
+  "version": "2026.1113.1850",
+  "versions": [
+   "2026.1113.0211",
+   "2026.1113.1850"
+  ],
+  "date": "2026-11-13",
+  "title": "Playing together",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Players list on O and in the pause menu: who is online and where, with Invite beside each name."
+   },
+   {
+    "tag": "New",
+    "text": "Notices when a player comes online or goes down on a run."
+   },
+   {
+    "tag": "New",
+    "text": "The minimap always points to the way down and to every other player in the zone."
+   },
+   {
+    "tag": "Better",
+    "text": "One press on another player invites them. An invite is a banner you answer with Y or N."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Wall lamps on run floors no longer glow as a bright slab through walls, and gunfire no longer makes the fog strobe."
+   }
+  ]
+ },
+ {
+  "version": "2026.1112.1640",
+  "date": "2026-11-12",
+  "title": "Skill tree and raids",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Skill tree on K and in the pause menu: three branches, three tiers and 18 skills."
+   },
+   {
+    "tag": "New",
+    "text": "Every level gives a skill point. Passives take three ranks, and each tier opens with points spent in its branch."
+   },
+   {
+    "tag": "New",
+    "text": "New passives: Vigour, Zeal, Reserve, Fleet, Focus, Ruin and Dread."
+   },
+   {
+    "tag": "New",
+    "text": "Raids: clear a tier's contract to open its raid. Five floors, a Relay Warden holding the lift on floor 3 and the Overseer on floor 5."
+   },
+   {
+    "tag": "New",
+    "text": "Raids pay more XP, better loot luck and 4 or 5 vault pieces."
+   }
+  ]
+ },
+ {
+  "version": "2026.1112.1350",
+  "date": "2026-11-12",
+  "title": "Speak to chat",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Hold V to speak a chat line. It is turned into text on your own computer and lands in the chat line for you to check; Enter sends it."
+   },
+   {
+    "tag": "New",
+    "text": "The speech model (57 MB) downloads once, the first time you use it."
+   }
+  ]
+ },
+ {
+  "version": "2026.1111.2147",
+  "versions": [
+   "2026.1111.1949",
+   "2026.1111.2147"
+  ],
+  "date": "2026-11-11",
+  "title": "Chat, parties and a new quest log",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Chat: Enter opens a line, and everyone online sees it with your name and where you are. You stand still while typing."
+   },
+   {
+    "tag": "New",
+    "text": "Parties: walk up to another player in a safe zone to invite them. They answer yes or no and join you."
+   },
+   {
+    "tag": "Better",
+    "text": "Quest log: cards in two columns with a progress bar, ticked steps, the current step in gold with where to go, and the reward."
+   },
+   {
+    "tag": "Better",
+    "text": "A calmer city: fewer people on the streets, walking between real places and stopping a while when they arrive."
+   },
+   {
+    "tag": "Better",
+    "text": "The landing pad is kept clear, nobody appears right next to you when you arrive, and passing remarks are rarer."
+   }
+  ]
+ },
+ {
+  "version": "2026.1111.0055",
+  "date": "2026-11-11",
+  "title": "A living city",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Port Halden has a crowd: people, service robots, sweepers, haulers, dock robots and drones, groups stopped to talk and people at the stalls."
+   },
+   {
+    "tag": "New",
+    "text": "Four street traders at stalls: noodles, weapon mods, surplus guns and drinks."
+   },
+   {
+    "tag": "Better",
+    "text": "People far out of view stop animating, which saves frame time."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Sparks, steam vents and flickering lamps no longer flash inside the fog like lightning in a cloud."
+   }
+  ]
+ },
+ {
+  "version": "2026.1110.1518",
+  "date": "2026-11-10",
+  "title": "Port Halden, the city",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Port Halden is the hub: one city with the Nightjar on a landing pad, a market and the freight lift that starts every run."
+   },
+   {
+    "tag": "New",
+    "text": "Lifts from the depths bring you back up to the city, and quests point at the city and contract floors."
+   },
+   {
+    "tag": "Better",
+    "text": "Street fronts built from sci-fi panels, with shopfronts at street level and windows lit warm, pale and emerald."
+   },
+   {
+    "tag": "Better",
+    "text": "Roof decks, plazas with light masts and cargo stacks, a paved landing pad with landing lights and strings of bulbs round the market."
+   },
+   {
+    "tag": "Better",
+    "text": "The city at night is easier to read, with lighter fronts and softer edges to the screen."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Towers between you and the camera are cut away, so they no longer black out part of the screen."
+   }
+  ]
+ },
+ {
+  "version": "2026.1102.0047",
+  "versions": [
+   "2026.1101.1936",
+   "2026.1101.2204",
+   "2026.1102.0047"
+  ],
+  "date": "2026-11-01",
+  "title": "Much smaller updates",
+  "items": [
+   {
+    "tag": "Better",
+    "text": "Updates come in parts and most are a few MB. The large art download only comes again when the art changes."
+   },
+   {
+    "tag": "Better",
+    "text": "On a Mac the launcher opens straight away, with no unknown developer warning."
+   }
+  ]
+ },
+ {
+  "version": "2026.1031.1901",
+  "date": "2026-10-31",
+  "title": "Windows",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Singularity runs on Windows, with its own launcher."
+   },
+   {
+    "tag": "Better",
+    "text": "HUD corners read as one block: each card is as wide as the cluster under it."
+   },
+   {
+    "tag": "Better",
+    "text": "The way into contract runs is labelled, and until you clear Tier I a reminder says where it is."
+   }
+  ]
+ },
+ {
+  "version": "2026.1031.1645",
+  "versions": [
+   "2026.1031.1524",
+   "2026.1031.1645"
+  ],
+  "date": "2026-10-31",
+  "title": "City districts",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Contract floors from Tier II up are city districts."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Launcher: Pause and Resume really pause and resume the download."
+   }
+  ]
+ },
+ {
+  "version": "2026.1031.1355",
+  "date": "2026-10-31",
+  "title": "Contracts, levels and a companion",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Contracts: three floors with the Foundry Overseer at the bottom, across five tiers. Clearing one opens the next."
+   },
+   {
+    "tag": "New",
+    "text": "A free supply cache on contract floors: pick one of three mods or an overclock."
+   },
+   {
+    "tag": "New",
+    "text": "Character levels and XP from kills and finished runs, with a level and XP bar top left."
+   },
+   {
+    "tag": "New",
+    "text": "A companion follows you, fights beside you, draws fire and gets back up 10 seconds after going down. Rename it in the pause menu, or switch it off in Gameplay settings."
+   },
+   {
+    "tag": "Better",
+    "text": "HUD: health and the repair injector bottom left, Current and your abilities bottom right, the middle of the screen clear."
+   },
+   {
+    "tag": "Balance",
+    "text": "Dying on a run keeps your loot and half its XP, and you wake in Port Halden."
+   },
+   {
+    "tag": "Fixed",
+    "text": "The death screen names the floor you were on, and the minimap shows the right depth after loading a save."
+   }
+  ]
+ },
+ {
+  "version": "2026.1030.1415",
+  "versions": [
+   "2026.1030.1230",
+   "2026.1030.1314",
+   "2026.1030.1415"
+  ],
+  "date": "2026-10-30",
+  "title": "Less loot, more range, playtest fixes",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Named wrecks can be boarded, and the lift back up returns you beside them."
+   },
+   {
+    "tag": "New",
+    "text": "The launcher has its own icon."
+   },
+   {
+    "tag": "Better",
+    "text": "The map remembers what you explored, and area gates show where they go."
+   },
+   {
+    "tag": "Better",
+    "text": "The camera sits further back, and machines only start fighting once they are on screen or close."
+   },
+   {
+    "tag": "Better",
+    "text": "Smaller updates: the launcher downloads only what changed."
+   },
+   {
+    "tag": "Better",
+    "text": "Station decks have new sci-fi wall panels with viewing windows and warm lamps."
+   },
+   {
+    "tag": "Balance",
+    "text": "Ordinary machines drop an item about one kill in 40 and never Common. Champions always drop one Rare or better piece."
+   },
+   {
+    "tag": "Balance",
+    "text": "Only Rare or better loot shows its label from afar; the rest shows within 5 metres."
+   },
+   {
+    "tag": "Balance",
+    "text": "Corridor hordes on Hard and up stop growing past depth 6."
+   },
+   {
+    "tag": "Fixed",
+    "text": "The constant electric crackle is gone."
+   },
+   {
+    "tag": "Fixed",
+    "text": "No T-pose behind the title screen."
+   }
+  ]
+ },
+ {
+  "version": "2026.1030.1138",
+  "versions": [
+   "2026.1030.1058",
+   "2026.1030.1138"
+  ],
+  "date": "2026-10-30",
+  "title": "The loot update, the launcher and a new look",
+  "items": [
+   {
+    "tag": "New",
+    "text": "The Singularity launcher installs the game, keeps it up to date and starts it."
+   },
+   {
+    "tag": "New",
+    "text": "Legendary weapons roll a unique power: Detonator, Leech Relay, Current Siphon, Elite Hunter, Static Charge or Ricochet."
+   },
+   {
+    "tag": "New",
+    "text": "Mods drop from machines at every rarity. Fit them from the bag or by dragging onto a weapon or armour piece."
+   },
+   {
+    "tag": "New",
+    "text": "Weapon affixes that reward a style: Tracker suite, Point-blank rig, Fracture rounds, Salvage loop and Harvest coil."
+   },
+   {
+    "tag": "New",
+    "text": "Containers on dungeon floors: lockers, weapon cases, medical cabinets, supply crates and fallen workers."
+   },
+   {
+    "tag": "New",
+    "text": "Special weapons: the Ricochet Disc Launcher and the Gravity Well Projector, both in the ship armory."
+   },
+   {
+    "tag": "New",
+    "text": "Character appearance: body, skin, hood, nine hairstyles, six hair colours, facial hair and outfit dyes."
+   },
+   {
+    "tag": "Better",
+    "text": "17 new gun models. Fitted mods show on the gun, and Rare or better guns carry a sight."
+   },
+   {
+    "tag": "Better",
+    "text": "Dungeon floors carry lab consoles, specimen capsules, cargo and breakable crates."
+   },
+   {
+    "tag": "Better",
+    "text": "Frame rate on deep floors is much higher (about 30 to about 49 fps at depth 18 on a fast Mac). Default render scale is 0.6."
+   },
+   {
+    "tag": "Better",
+    "text": "A new HUD and inventory in gunmetal and emerald, with bigger ability slots and large cooldown numbers."
+   },
+   {
+    "tag": "Better",
+    "text": "Item and character pictures lose their black boxes."
+   },
+   {
+    "tag": "Better",
+    "text": "Readouts hold up on bright ground, and your character stands out from it."
+   },
+   {
+    "tag": "Better",
+    "text": "New colours across the game: tech glows go emerald, Radiant goes gold and Prism green."
+   },
+   {
+    "tag": "Better",
+    "text": "Launcher downloads can be paused, resume after a restart and retry by themselves after a dropped connection."
+   },
+   {
+    "tag": "Balance",
+    "text": "Machines never start a fight within 12 metres of the arrival lift."
+   },
+   {
+    "tag": "Balance",
+    "text": "Reinforcement waves stop growing past depth 6, though machines still get tougher."
+   },
+   {
+    "tag": "Balance",
+    "text": "The Relay Warden's enraged barrage is lighter."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Dodging no longer turns you into a white ghost."
+   },
+   {
+    "tag": "Fixed",
+    "text": "On a controller, the d-pad in the inventory no longer swaps weapons."
+   }
+  ]
+ }
 ]
