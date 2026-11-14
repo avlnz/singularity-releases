@@ -1,5 +1,40 @@
 [
  {
+  "version": "2026.1114.1909",
+  "date": "2026-11-14",
+  "title": "A companion who talks and shows the way",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Your companion talks. On a new game it tells you who you are, walks you to the freight lift and explains firing, dodging, loot, the bag, the exit lift, crystals and skills, each once."
+   },
+   {
+    "tag": "New",
+    "text": "It leads: it walks ahead to the next objective, waits for you and comes back if you fall behind."
+   },
+   {
+    "tag": "New",
+    "text": "Combat call-outs for low health, elites, relay waves and drops."
+   },
+   {
+    "tag": "Better",
+    "text": "Everyone has a companion now. You can still rename it in the pause menu."
+   },
+   {
+    "tag": "Better",
+    "text": "The companion stays put when you only move the mouse, and stands behind the way you last walked."
+   },
+   {
+    "tag": "Better",
+    "text": "The city has more to say: people standing around talk too, and what you hear follows your progress."
+   },
+   {
+    "tag": "New",
+    "text": "Particles setting: turn every particle effect off for more speed."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.1750",
   "date": "2026-11-14",
   "title": "New blade moves",
