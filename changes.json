@@ -1,5 +1,24 @@
 [
  {
+  "version": "2026.1114.2048",
+  "date": "2026-11-14",
+  "title": "A rebuilt Nightjar and players who look like themselves",
+  "items": [
+   {
+    "tag": "New",
+    "text": "The Nightjar's interior is rebuilt: textured deck plates, banded gunmetal bulkheads, door frames on the spine and painted guide lines, in place of the flat white panels."
+   },
+   {
+    "tag": "New",
+    "text": "Other players now appear with their own body, skin, hair, hood and outfit colour. Before, everyone was drawn with your look."
+   },
+   {
+    "tag": "Changed",
+    "text": "Other players are warm coral on the map, in name tags, toasts and tracers, so they stand apart from green doors and objectives."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.1941",
   "date": "2026-11-14",
   "title": "Salvage, the reactor and a launcher that keeps itself up to date",
