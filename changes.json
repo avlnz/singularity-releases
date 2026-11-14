@@ -1,5 +1,28 @@
 [
  {
+  "version": "2026.1114.1734",
+  "date": "2026-11-14",
+  "title": "Difficulty that follows each player",
+  "items": [
+   {
+    "tag": "Balance",
+    "text": "On a run floor your damage dealt and taken is matched to that floor. Gear far above the floor still hits harder, but no longer many times harder, and a player below it gets a little help. Stricter on Insane than on Normal."
+   },
+   {
+    "tag": "Balance",
+    "text": "Your companion deals a share of your matched damage, so it no longer clears a floor on its own."
+   },
+   {
+    "tag": "New",
+    "text": "The status line says MATCHED TO FLOOR when the floor is holding your damage back."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Co-op: each player's hits carry their own weapon bonuses, not the party leader's."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.1712",
   "versions": [
    "2026.1114.1712",
