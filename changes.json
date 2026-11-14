@@ -1,5 +1,44 @@
 [
  {
+  "version": "2026.1115.0251",
+  "date": "2026-11-15",
+  "title": "Blade and gun, parries, executions and armour you can see",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Two weapon slots: right click (RT) swings your blade, left click (LT) fires your gun, with no swapping. Everyone starts with a Worn Arc Blade."
+   },
+   {
+    "tag": "New",
+    "text": "Parry: raise your guard just as a blow or bolt lands to turn it aside, and your next swing is a sure critical hit."
+   },
+   {
+    "tag": "New",
+    "text": "Posture: blade hits fill a bar under a machine's health. When it breaks, swing near it to execute it with one huge blow."
+   },
+   {
+    "tag": "Changed",
+    "text": "Every blade hit has weight now: a short freeze, a camera kick and sparks, heavier for heavier stances. A dodge cancels a swing and keeps your place in the combo."
+   },
+   {
+    "tag": "Changed",
+    "text": "Healing: elites always drop a health canister and ordinary machines rarely do. Each heals 15% of your max health, and you walk over to pick it up."
+   },
+   {
+    "tag": "New",
+    "text": "Machines and crates drop salvage parts for the fabricator and reactor."
+   },
+   {
+    "tag": "New",
+    "text": "Your best armour piece shows on your outfit: steel at Rare, a gold edge at Epic, dark metal with an emerald edge at Legendary."
+   },
+   {
+    "tag": "Changed",
+    "text": "Hints now show the keys for the device you are using, including blade stance (Z on keyboard), guard, parry and execute. On controller, Skill moved to B."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.2323",
   "date": "2026-11-14",
   "title": "The Nightjar in white and gold, a fabricator, and new sword moves",
