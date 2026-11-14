@@ -1,5 +1,36 @@
 [
  {
+  "version": "2026.1114.1941",
+  "date": "2026-11-14",
+  "title": "Salvage, the reactor and a launcher that keeps itself up to date",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Salvage: break any item in your bag into parts (Alloy, Wiring, Fusion Cores, Crystal Shards). Rarer gear gives more, and found crystals finally have a use."
+   },
+   {
+    "tag": "New",
+    "text": "Salvage everything below Rare in one go at the workbench."
+   },
+   {
+    "tag": "New",
+    "text": "The reactor: the core in the Nightjar's engine room has six marks to install with parts and credits, raising your Current and how fast it returns."
+   },
+   {
+    "tag": "New",
+    "text": "The launcher shows what's new in a panel of its own, and updates itself from now on."
+   },
+   {
+    "tag": "Better",
+    "text": "Your companion points out salvage and the reactor the first time they matter."
+   },
+   {
+    "tag": "Fixed",
+    "text": "The extra Current from PIP-7's core is no longer lost when you die, and is given back if you lost it."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.1909",
   "date": "2026-11-14",
   "title": "A companion who talks and shows the way",
