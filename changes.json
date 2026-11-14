@@ -1,5 +1,28 @@
 [
  {
+  "version": "2026.1114.2323",
+  "date": "2026-11-14",
+  "title": "The Nightjar in white and gold, a fabricator, and new sword moves",
+  "items": [
+   {
+    "tag": "New",
+    "text": "The Nightjar is rebuilt in clean white panels with gold trim: gold door arches, gold-edged deck tiles, columns at the panel joints and detailed wall tops. It is drawn at full resolution with its own even lighting."
+   },
+   {
+    "tag": "New",
+    "text": "Fabricator on the Nightjar: lasting upgrades bought with salvaged parts and credits. Companion plating, targeting and field kit, more bag and locker slots, and better salvage yields, three levels each."
+   },
+   {
+    "tag": "New",
+    "text": "Energy blade: hold the stance key to guard. Hits from the front land much softer and bolts are turned back. Let go after a moment for a charged strike down your aim line. A tap still changes stance."
+   },
+   {
+    "tag": "New",
+    "text": "Ask to join: press ASK next to a player in the players list (O). They answer yes or no on a banner, and a yes takes you straight into their party."
+   }
+  ]
+ },
+ {
   "version": "2026.1114.2048",
   "date": "2026-11-14",
   "title": "A rebuilt Nightjar and players who look like themselves",
