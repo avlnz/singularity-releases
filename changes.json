@@ -1,5 +1,51 @@
 [
  {
+  "version": "2026.1115.1539",
+  "date": "2026-11-15",
+  "title": "Healing from kills has a limit",
+  "items": [
+   {
+    "tag": "Changed",
+    "text": "Healing from kills (Bloodcoil, Hunger, the Void finisher and Leech Relay) now shares one limit that refills at 4% of your max integrity a second. One kill still feels good, but a horde can no longer keep you topped up. Executions heal outside the limit."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Players returning on an older cloud save with two guns now get a blade, so right click always does something."
+   },
+   {
+    "tag": "Fixed",
+    "text": "With only a blade or only a gun, either mouse button or trigger uses it."
+   }
+  ]
+ },
+ {
+  "version": "2026.1115.1505",
+  "date": "2026-11-15",
+  "title": "The workshop, a Blade skill tree and mastery",
+  "items": [
+   {
+    "tag": "New",
+    "text": "The workshop: use the workbench on the Nightjar and a bench opens beside your inventory. Put any weapon or armour on it to see it up close, then upgrade it, re-forge it, build a component from your parts and fit it, fit a mod from your bag, or salvage it."
+   },
+   {
+    "tag": "New",
+    "text": "A Blade skill tree, open to every alignment: Slipstream, Riposte, Keen Edge, Executioner, Iron Guard and Tempest."
+   },
+   {
+    "tag": "New",
+    "text": "Mastery: once every tree you can use is full, spare skill points buy small lasting bonuses to damage, integrity and Current, with no limit."
+   },
+   {
+    "tag": "Changed",
+    "text": "Skills you can learn now are tinted in their tree's colour, so open trees are easy to spot."
+   },
+   {
+    "tag": "Fixed",
+    "text": "If the game catches a burst of a graphics error linked to white flashes, it turns particles off for the rest of the session and tells you."
+   }
+  ]
+ },
+ {
   "version": "2026.1115.0251",
   "date": "2026-11-15",
   "title": "Blade and gun, parries, executions and armour you can see",
