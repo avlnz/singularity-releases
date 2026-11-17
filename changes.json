@@ -1,5 +1,28 @@
 [
  {
+  "version": "2026.1118.0352",
+  "date": "2026-11-18",
+  "title": "A safer start on Intel Macs",
+  "items": [
+   {
+    "tag": "Better",
+    "text": "Intel Macs: if the game dies in its first 90 seconds, the next start switches to the OpenGL renderer by itself and stays on it. This is a fallback for a crash one tester hit, and it has not been confirmed on an Intel Mac yet."
+   },
+   {
+    "tag": "Fixed",
+    "text": "OpenGL on a Mac: the floor and the outdoor ground asked for more textures than a Mac's OpenGL allows, so they did not draw. They now use a lighter version there."
+   },
+   {
+    "tag": "Better",
+    "text": "OpenGL on a Mac always runs with the Performance mode values."
+   },
+   {
+    "tag": "Better",
+    "text": "A start that dies while loading now sends its log on the next launch, so crashes like this one report themselves."
+   }
+  ]
+ },
+ {
   "version": "2026.1117.2235",
   "date": "2026-11-17",
   "title": "Blade and gun work together, and two machines that want your blade",
