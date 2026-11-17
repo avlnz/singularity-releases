@@ -1,5 +1,32 @@
 [
  {
+  "version": "2026.1117.2235",
+  "date": "2026-11-17",
+  "title": "Blade and gun work together, and two machines that want your blade",
+  "items": [
+   {
+    "tag": "New",
+    "text": "Gun marks: a hit from your gun marks a machine for 4 seconds (an amber pip by its health bar). Your next blade hit on it lands as a finisher, with double the posture, and uses the mark up. Shoot into a pack, then cut."
+   },
+   {
+    "tag": "New",
+    "text": "Three legendary powers for blades only. Serrated Arc: each cut on a machine makes your next cuts on it 10% stronger, up to five. Breaker Pulse: a parry bursts outward and hits, slows and unbalances every machine within 4.5 m. Reaping Stroke: an execution carries half its blow to every other machine within 4 m."
+   },
+   {
+    "tag": "New",
+    "text": "The Bulwark, from depth 2: a walker behind a plate of amber light. The plate turns three quarters of any shot or power that meets it from the front. Your blade goes straight through, and so does anything from behind. Break its posture and the plate drops."
+   },
+   {
+    "tag": "New",
+    "text": "The Phase Drone, from depth 2: a drone with a violet lens that blinks aside when you shoot it. A blade hit pins it in place for a few seconds."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Intel Macs: the game no longer asks for an Apple silicon upscaler there, and the OpenGL renderer no longer logs a shadow error every frame. The crash at start on some Intel Macs is still being tracked down."
+   }
+  ]
+ },
+ {
   "version": "2026.1115.1539",
   "date": "2026-11-15",
   "title": "Healing from kills has a limit",
