@@ -1,5 +1,16 @@
 [
  {
+  "version": "2026.1118.1834",
+  "date": "2026-11-18",
+  "title": "Blade moves on screen",
+  "items": [
+   {
+    "tag": "New",
+    "text": "A Blade moves panel sits beside the controls list: chain, stance, guard, parry, charged strike, lunge, finisher and execute, each with how to do it. Press H to show or hide both."
+   }
+  ]
+ },
+ {
   "version": "2026.1118.0352",
   "date": "2026-11-18",
   "title": "A safer start on Intel Macs",
