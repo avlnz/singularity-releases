@@ -1,5 +1,16 @@
 [
  {
+  "version": "2026.1118.2150",
+  "date": "2026-11-18",
+  "title": "Workshop on a controller",
+  "items": [
+   {
+    "tag": "Fixed",
+    "text": "The workshop could only be used with the mouse. On a controller it now opens on the bench actions: D-pad up and down picks one, A does it, B goes back to the inventory. From the inventory, A puts an item on the bench and D-pad left returns to the actions."
+   }
+  ]
+ },
+ {
   "version": "2026.1118.1834",
   "date": "2026-11-18",
   "title": "Blade moves on screen",
