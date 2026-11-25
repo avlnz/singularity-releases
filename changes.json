@@ -10,6 +10,10 @@
    },
    {
     "tag": "Fixed",
+    "text": "Friends list: players were all showing as Level 1 and Depth 1 instead of their real level, deepest floor and cleared tier. Stats now update to real values on each save."
+   },
+   {
+    "tag": "Fixed",
     "text": "Cloud saves now carry your learned skills and deepest floor reached, not just gear and level."
    },
    {
