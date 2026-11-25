@@ -1,5 +1,28 @@
 [
  {
+  "version": "2026.1126.0342",
+  "date": "2026-11-26",
+  "title": "Balanced skill points, cloud skill sync, and launcher fixes",
+  "items": [
+   {
+    "tag": "Balance",
+    "text": "Skill points now come from character levels (one per level), finished quests and cleared contract tiers, instead of every new depth number. Deep contract jumps no longer flood you with half the tree at low level. Existing saves with more learned ranks than points trim cleanly from the end."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Cloud saves now carry your learned skills and deepest floor reached, not just gear and level."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Volatile champions on Unstable cores floors no longer log a duplicate death-burst error."
+   },
+   {
+    "tag": "Better",
+    "text": "Windows launcher: if Windows Smart App Control or Defender blocks Singularity.exe from starting, the launcher now says so and tells you how to clear it."
+   }
+  ]
+ },
+ {
   "version": "2026.1118.2150",
   "date": "2026-11-18",
   "title": "Workshop on a controller",
