@@ -1,5 +1,28 @@
 [
  {
+  "version": "2026.1126.0444",
+  "date": "2026-11-26",
+  "title": "Cleaner HUD docks and solid Nightjar deck",
+  "items": [
+   {
+    "tag": "Better",
+    "text": "Rebuilt the bottom corners of the HUD into two matching dark glass docks. Integrity, weapon stats, holstered weapon and Repair live in one compact bottom-left dock; alignment, crystal, Current and power slots live in one matching bottom-right dock. No more floating readout text or tall gear boxes bleeding into the play area."
+   },
+   {
+    "tag": "Better",
+    "text": "Moved Blade moves out of the middle of the screen and folded them into the compact Controls panel under the minimap (toggle with H). Added dark backing to the minimap caption, the Controls hint and the chat prompt so they stay crisp over bright decks."
+   },
+   {
+    "tag": "Fixed",
+    "text": "The Nightjar's engine nacelles and tail beacon no longer clip into the boarding ramp bay or door arches."
+   },
+   {
+    "tag": "Fixed",
+    "text": "Added solid collision to the Nightjar's interior furniture, terminals, reactor core and cockpit seats, and moved PIP-7 clear of the reactor core."
+   }
+  ]
+ },
+ {
   "version": "2026.1126.0342",
   "date": "2026-11-26",
   "title": "Balanced skill points, cloud skill sync, and launcher fixes",
